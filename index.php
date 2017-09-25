@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Social Networking Photo Sharing Service</title>
 
-<link rel="icon" href="logo.png" type="image/x-icon">
+<link rel="icon" href="images/logo.png" type="image/x-icon">
 
 <link rel="stylesheet" type="text/css" href="bootstarp/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="bootstarp/css/bootstrap.min.css" />
@@ -30,6 +30,8 @@
                 
                 <div class="row">
           	       <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                
+                <center><img class="img-responsive" src="images/logo.png" /></center>
                 
                 <center>
                 <br>
