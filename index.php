@@ -26,17 +26,17 @@
               	
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>   
             	
-				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="background:rgba(0,0,0,0.4); margin-top:90px; padding:20px 20px 30px 20px">
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="background:rgba(0,0,0,0.5); margin-top:90px; padding:20px 20px 30px 20px">
                 
                 <div class="row">
           	       <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                 
-                <center><img class="img-responsive" src="images/logo.png" /></center>
+                <img style="margin-left:115px" class="img-responsive" src="images/logo.png" />
                 
                 <center>
-                <br>
+               
                	<h1 style="margin-left:60px"><font face="Times New Roman, Times, serif">Login</font></h1>
-        <form name="login" method="post" action="" style="margin-top:20px; margin-left:60px">
+        <form name="login" method="post" action="" style="margin-left:60px">
          <div class="form-group">
         <input type="email" class="form-control" placeholder="abc@xyz.com" name="email" id="id">
         </div>
