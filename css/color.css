@@ -6,3 +6,7 @@
 .color:hover{
 	color:#C90;
 }
+li a:hover{
+    background-color: #C93 !important;
+	color:#000 !important;
+}

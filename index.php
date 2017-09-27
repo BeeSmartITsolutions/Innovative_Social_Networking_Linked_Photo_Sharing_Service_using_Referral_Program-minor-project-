@@ -8,6 +8,8 @@
 
 <link rel="stylesheet" type="text/css" href="bootstarp/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="bootstarp/css/bootstrap.min.css" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/color.css" />
 
 <script src="bootstarp/js/bootstrap.js"></script>
@@ -38,17 +40,7 @@
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     </div> 
                 
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <style>
-					
-li a:hover{
-    background-color: #C93 !important;
-	color:#000 !important;
-}
-
-
-					</style>
-                    
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">                    
                     <div class="nav">
                     <ul class="nav nav-pills">
                     
@@ -62,42 +54,15 @@ li a:hover{
                     
                     
                     </ul></div>
-                    <style>
-#login{
-	text-align:justify;
-	margin:0px 10px 0px 10px;
-}
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 50px; /* Location of the box */
-    left: 0;
-    top: 0;
-	padding-bottom:40px;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-}
-</style>
+                    
                        <!-- The Modal -->
                         <div id="myModal" class="modal">
                         
                           <!-- Modal content -->
                           <div class="modal-content">
-                            <div class="modal-header">
-                              <span class="close">&times;</span>
+                            <span class="close">&times;</span>
                               
-                              <center>
-                              <h3>Login</h3>
-                              
-                            </div>
-                            
-                            <div class="modal-body">
-                             <br>                          
+                            <div class="modal-body">                
                            <div id="login">  
                            
                             
@@ -107,7 +72,7 @@ li a:hover{
                 <center>
                
                	<h1><font face="Times New Roman, Times, serif">Login</font></h1></center>
-        <form name="login" method="post" action="" style="margin-left:60px">
+        <form name="login" method="post" action="">
          <div class="form-group">
         <input type="email" class="form-control" placeholder="abc@xyz.com" name="email" id="id">
         </div>
@@ -131,24 +96,10 @@ li a:hover{
 				   }
 			}
            ?>
-            
-        	
-        
-        
         </form>
-         <br>
-          			
-                            
-                            
-                            
-                            
-                           </div>
-						<br><br><br>
-                      
-                            <br>
-                           
+        			</div>            
                             <div class="modal-footer">
-                              <h6>Not an existing user? <a href="">Sign Up</a> here</h6>
+                              <center><h6>Not an existing user? <a href="">Sign Up</a> here</h6></center>
                             </div>
                           </div>
                         
