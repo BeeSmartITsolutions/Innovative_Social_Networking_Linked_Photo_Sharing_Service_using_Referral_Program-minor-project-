@@ -45,7 +45,7 @@
             	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 	
                     <div class="row" style="margin:10px 0px 10px 0px;" >
-        
+        			<div class="nav navbar-fixed-top">
         			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
             		</div> 
         	
@@ -58,7 +58,7 @@
                     </div> 
                 
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">                    
-                    <div class="nav">
+                    
                     <ul class="nav nav-pills">
                     
                     <li><a href="index.php" style="color:#FFF;">Home</a></li>
@@ -70,7 +70,7 @@
                     
                     
                     
-                    </ul></div>
+                    </ul>
                     
                        <!-- The Modal -->
                         <div id="myModal" class="modal">
@@ -112,13 +112,19 @@
 			}
            ?>
         </form>
-        			</div>            
+        					</div>            
+                           
+                           <!-- Footer start -->
                             <div class="modal-footer">
                               <center><h6>Not an existing user? <a href="">Sign Up</a> here</h6></center>
                             </div>
+                           <!-- Footer Ends --> 
+                            
                           </div>
+                        <!-- Modal Body ends -->
                         
                         </div>
+                        <!-- Modal Content ends -->
                         
 				        <script>
 						<!-- Modal Start -->
@@ -151,18 +157,21 @@
 
 <!-- Modal end -->
 						</script>              
-                       <!-- The Modal end -->
+                       
                     
+                   		 </div>
+                   		 <!-- The Modal end -->
                     </div>
                     
-                    </div>
-                
                 </div>
-            </div>
+                    
+                </div>
+           		</div>
+            
+  <!--headers one division will end in slider here-->
             
         <!-- header ends -->
-         
-		
+        
         
         <!-- slider start -->	 
         
@@ -171,7 +180,7 @@
 		<li><img src="slider/data1/images/use_3s_to_promote_your_business.jpg" alt="Use 3S to Promote your Business" title="Use 3S to Promote your Business" id="wows1_0"/></li>
 		<li><img src="slider/data1/images/use_3s_to_stay_in_touch.jpg" alt="Use 3S to stay in touch" title="Use 3S to stay in touch" id="wows1_1"/></li>
 		<li><img src="slider/data1/images/use_3s_to_share_your_posts_on_all_the_social_networks.jpg" alt="Use 3S to share your posts on all the Social Networks" title="Use 3S to share your posts on all the Social Networks" id="wows1_2"/></li>
-		<li><a href="http://wowslider.com"><img src="slider/data1/images/use_3s_to_stay_connected_with_all_the_social_networks_at_one_time.jpg" alt="wow slider" title="Use 3S to stay connected with all the Social Networks at one time" id="wows1_3"/></a></li>
+		<li><img src="slider/data1/images/use_3s_to_stay_connected_with_all_the_social_networks_at_one_time.jpg" alt="wow slider" title="Use 3S to stay connected with all the Social Networks at one time" id="wows1_3"/></li>
 		<li><img src="slider/data1/images/use_3s_to_share_your_opinions_with_others.jpg" alt="Use 3S to share your opinions with others" title="Use 3S to share your opinions with others" id="wows1_4"/></li>
 	</ul></div>
 	<div class="ws_bullets"><div>
@@ -184,15 +193,36 @@
 </div>	
 <script type="text/javascript" src="slider/engine1/wowslider.js"></script>
 <script type="text/javascript" src="slider/engine1/script.js"></script>
-        
+  	</div> <!--headers one division ends here-->
         <!-- slider ends -->	
         
         
-        <!-- About start -->	 
+        <!-- logo animation start -->	 
         
-			
+        <div class="row" id="animate_logo_background">
+        	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+ 			<div class="row" style="margin:10px 0px 10px 0px;">       
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                
+                </div>
+                
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                
+                </div>
+                
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                
+                </div>
+                
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
         
-        <!-- About ends -->	
+        <!-- logo animation ends -->	
         
         
         
@@ -203,10 +233,11 @@
         
         
         
-       </div>
+        
+		</div>
 	</div>
 	 <!-- main ends -->
 
 </div>
 </body>
-</html>
+</html> 
