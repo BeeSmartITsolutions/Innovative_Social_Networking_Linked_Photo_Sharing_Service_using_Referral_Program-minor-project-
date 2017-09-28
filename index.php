@@ -6,19 +6,30 @@
 
 <link rel="icon" href="images/logo.png" type="image/x-icon">
 
+<!-- Bootstrap files Start -->
+
 <link rel="stylesheet" type="text/css" href="bootstarp/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="bootstarp/css/bootstrap.min.css" />
+<script src="bootstarp/js/bootstrap.js"></script>
+<script src="bootstarp/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap files end -->
+
+<!-- CSS files Start -->
 
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/color.css" />
+
+<!-- CSS files end  -->
+
+
 
 <!-- Start Slider -->
 <link rel="stylesheet" type="text/css" href="slider/engine1/style.css" />
 <script type="text/javascript" src="slider/engine1/jquery.js"></script>
 <!-- End Slider -->
 
-<script src="bootstarp/js/bootstrap.js"></script>
-<script src="bootstarp/js/bootstrap.min.js"></script>
+
 </head>
 
 <body style="background:url(images/back.png) no-repeat fixed; background-size:cover" >
@@ -29,6 +40,7 @@
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         
         <!-- header start -->	
+           
             <div class="row" id="header">
             	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 	
@@ -147,13 +159,14 @@
                 
                 </div>
             </div>
+            
         <!-- header ends -->
+         
+		
         
+        <!-- slider start -->	 
         
-        <!-- slider start -->	
-        
-        
-<div id="wowslider-container1">
+			<div id="wowslider-container1">
 <div class="ws_images"><ul>
 		<li><img src="slider/data1/images/use_3s_to_promote_your_business.jpg" alt="Use 3S to Promote your Business" title="Use 3S to Promote your Business" id="wows1_0"/></li>
 		<li><img src="slider/data1/images/use_3s_to_stay_in_touch.jpg" alt="Use 3S to stay in touch" title="Use 3S to stay in touch" id="wows1_1"/></li>
@@ -175,6 +188,11 @@
         <!-- slider ends -->	
         
         
+        <!-- About start -->	 
+        
+			
+        
+        <!-- About ends -->	
         
         
         
@@ -185,8 +203,7 @@
         
         
         
-        
-		</div>
+       </div>
 	</div>
 	 <!-- main ends -->
 
