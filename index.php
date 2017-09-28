@@ -12,6 +12,11 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/color.css" />
 
+<!-- Start Slider -->
+<link rel="stylesheet" type="text/css" href="slider/engine1/style.css" />
+<script type="text/javascript" src="slider/engine1/jquery.js"></script>
+<!-- End Slider -->
+
 <script src="bootstarp/js/bootstrap.js"></script>
 <script src="bootstarp/js/bootstrap.min.js"></script>
 </head>
@@ -30,12 +35,12 @@
                     <div class="row" style="margin:10px 0px 10px 0px;" >
         
         			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-            </div> 
+            		</div> 
         	
             		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin-top:5px;">
                     
                     <a href="index.php" style="text-decoration:none; color:#fff;"><font size="+2">3<b class="color">S</b></font></a>
-            </div> 
+           		 	</div> 
         
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     </div> 
@@ -140,17 +145,44 @@
                     
                     </div>
                 
-        
-        		</div>
-                
-                
-                	<!-- Row 2 close -->
-
-
-                    
                 </div>
             </div>
         <!-- header ends -->
+        
+        
+        <!-- slider start -->	
+        
+        
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="slider/data1/images/use_3s_to_promote_your_business.jpg" alt="Use 3S to Promote your Business" title="Use 3S to Promote your Business" id="wows1_0"/></li>
+		<li><img src="slider/data1/images/use_3s_to_stay_in_touch.jpg" alt="Use 3S to stay in touch" title="Use 3S to stay in touch" id="wows1_1"/></li>
+		<li><img src="slider/data1/images/use_3s_to_share_your_posts_on_all_the_social_networks.jpg" alt="Use 3S to share your posts on all the Social Networks" title="Use 3S to share your posts on all the Social Networks" id="wows1_2"/></li>
+		<li><a href="http://wowslider.com"><img src="slider/data1/images/use_3s_to_stay_connected_with_all_the_social_networks_at_one_time.jpg" alt="wow slider" title="Use 3S to stay connected with all the Social Networks at one time" id="wows1_3"/></a></li>
+		<li><img src="slider/data1/images/use_3s_to_share_your_opinions_with_others.jpg" alt="Use 3S to share your opinions with others" title="Use 3S to share your opinions with others" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Use 3S to Promote your Business"><span><img src="slider/data1/tooltips/use_3s_to_promote_your_business.jpg" alt="Use 3S to Promote your Business"/>1</span></a>
+		<a href="#" title="Use 3S to stay in touch"><span><img src="slider/data1/tooltips/use_3s_to_stay_in_touch.jpg" alt="Use 3S to stay in touch"/>2</span></a>
+		<a href="#" title="Use 3S to share your posts on all the Social Networks"><span><img src="slider/data1/tooltips/use_3s_to_share_your_posts_on_all_the_social_networks.jpg" alt="Use 3S to share your posts on all the Social Networks"/>3</span></a>
+		<a href="#" title="Use 3S to stay connected with all the Social Networks at one time"><span><img src="slider/data1/tooltips/use_3s_to_stay_connected_with_all_the_social_networks_at_one_time.jpg" alt="Use 3S to stay connected with all the Social Networks at one time"/>4</span></a>
+		<a href="#" title="Use 3S to share your opinions with others"><span><img src="slider/data1/tooltips/use_3s_to_share_your_opinions_with_others.jpg" alt="Use 3S to share your opinions with others"/>5</span></a>
+	</div></div>
+</div>	
+<script type="text/javascript" src="slider/engine1/wowslider.js"></script>
+<script type="text/javascript" src="slider/engine1/script.js"></script>
+        
+        <!-- slider ends -->	
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
