@@ -76,16 +76,14 @@
          <div class="form-group">
         <input type="email" class="form-control" placeholder="abc@xyz.com" name="email" id="id">
         </div>
-            <br>
-            <div class="form-group">
+             <div class="form-group">
           <input type="password" placeholder="********" class="form-control" name="pass" id="p">
             </div>
-            <br>
             
         <div class="form-group">
-            <input type="submit" name="submit" id="sub" class="button" value="Login" onClick="validate()">
-            
-             <input type="reset" name="reset" id="res" class="button" value="Reset">
+             <center><button type="submit" name="submit" id="sub" class="button btn" onClick="validate()"><span class="glyphicon glyphicon-log-in">&nbsp;Login</span></button>
+             &nbsp;&nbsp;&nbsp;<button type="reset" name="reset" id="res" class="button btn" ><span class="glyphicon glyphicon-remove-sign">&nbsp;Reset</span></button>
+             </center>
              </div>
            <?php
 		  function error($error)

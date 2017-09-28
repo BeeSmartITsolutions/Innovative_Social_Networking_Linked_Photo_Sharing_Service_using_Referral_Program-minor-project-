@@ -77,6 +77,47 @@
 	border-radius:5px;
 }
 
-/* Modal start */
+/* Modal end */
 
+/* login form start */
 
+input[type=email], select {
+    padding: 14px 20px;
+    margin: 8px 0;	
+	background:rgba(0,0,0,1);
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	color:#FFF;
+    box-sizing: border-box;
+}
+input[type=email]:hover {
+    padding: 14px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	background:inherit;
+}
+input[type=password], select {
+    padding: 14px 20px;
+    margin: 8px 0;
+	background:rgba(0,0,0,1);
+	width:100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password]:hover{
+    padding: 14px 20px;
+	background:inherit;
+    margin: 8px 0;
+	width:100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* login form end */
