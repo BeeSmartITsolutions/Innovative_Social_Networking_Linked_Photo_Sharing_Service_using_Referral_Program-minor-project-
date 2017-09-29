@@ -231,41 +231,40 @@ function validate(){
         	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
  			<div class="row" style="margin:50px 0px 50px 0px;">       		<center>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
-                
-                <div class="flap1" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
-                
-                <div class="flap2" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
+                <div class="flap" style="background-color:#3B5998; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
+                 <div class="flap1" style="background-color:#3B5998; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
+                 <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite "> <img src="images/fb.png" />
+               
                 </div></div></div>
                 
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap" style="background-color:#55ACEE; width:100px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
                 
-                <div class="flap1" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap1" style="background-color:#55ACEE; width:100px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
                 
-                <div class="flap2" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite "> <img src="images/twitter.png" />
                 </div></div></div>
                 
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap" style="background-color:#dd4b39; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
                 
-                <div class="flap1" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap1" style="background-color:#dd4b39; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
                 
-                <div class="flap2" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite "> <img src="images/google+.png" />
                 </div></div></div>
                 
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap" style="background-color:#007bb5; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
                 
-                <div class="flap1" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap1" style="background-color:#007bb5; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
                 
-                <div class="flap2" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite "> <img src="images/linkedin.png" />
                 </div></div></div>
                 
                 </div>
