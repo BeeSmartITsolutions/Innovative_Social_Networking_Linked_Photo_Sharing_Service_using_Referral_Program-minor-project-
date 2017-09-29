@@ -22,6 +22,34 @@
 
 <!-- CSS files end  -->
 
+<!-- js files Start -->
+
+<script>
+function validate(){
+	var email = document.getElementById("emailid").value;
+	var pass = document.getElementById("pswrd").value;
+	
+	if(email == ''){
+		alert("You haven't entered your Email ID");
+	}
+	else if(pass == ''){
+		alert("You haven't entered your Password");
+	}
+	else{
+		var b = confirm("Are you sure you want to Login?");
+		if(b==1)
+		{
+			alert("Successfully Logged in....");
+		}
+		else
+		{
+			alert("Login Failed!!!..");
+		}	
+	}
+}
+</script>
+
+<!-- js files end -->
 
 
 <!-- Start Slider -->
@@ -91,10 +119,10 @@
                	<h1><font face="Times New Roman, Times, serif">Login</font></h1></center>
         <form name="login" method="post" action="">
          <div class="form-group">
-        <input type="email" class="form-control" placeholder="abc@xyz.com" name="email" id="id">
+        <input type="email" class="form-control" placeholder="abc@xyz.com" name="email" id="emailid">
         </div>
              <div class="form-group">
-          <input type="password" placeholder="********" class="form-control" name="pass" id="p">
+          <input type="password" placeholder="********" class="form-control" name="pass" id="pswrd">
             </div>
             
         <div class="form-group">
@@ -201,23 +229,67 @@
         
         <div class="row" id="animate_logo_background">
         	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
- 			<div class="row" style="margin:10px 0px 10px 0px;">       
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+ 			<div class="row" style="margin:50px 0px 50px 0px;">       		<center>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="flap" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
+                
+                <div class="flap1" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
+                
+                <div class="flap2" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
+                </div></div></div>
                 
                 </div>
                 
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="flap" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                
+                <div class="flap1" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                
+                <div class="flap2" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                </div></div></div>
                 
                 </div>
                 
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="flap" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                
+                <div class="flap1" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                
+                <div class="flap2" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                </div></div></div>
                 
                 </div>
                 
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="flap" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                
+                <div class="flap1" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                
+                <div class="flap2" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                </div></div></div>
                 
                 </div>
-            </div>
+                
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="flap" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                
+                <div class="flap1" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                
+                <div class="flap2" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                </div></div></div>
+                
+                </div>
+                
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="flap" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                
+                <div class="flap1" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                
+                <div class="flap2" style="background-color:#CF3; width:100px; height:100px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                </div></div></div>
+                
+                </div>
+</center>            </div>
             
             </div>
         </div>

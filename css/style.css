@@ -121,3 +121,21 @@ input[type=password]:hover{
     box-sizing: border-box;
 }
 /* login form end */
+
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);  
+  }
+  100% {
+	  transform: rotate(360deg);
+  }
+}
+@keyframes roll1 {
+  0% {
+    transform: rotate(0);  
+  }
+  100% {
+	  transform: rotate(-360deg);
+  }
+}
