@@ -222,6 +222,7 @@ function validate(){
 <script type="text/javascript" src="slider/engine1/wowslider.js"></script>
 <script type="text/javascript" src="slider/engine1/script.js"></script>
   	</div> <!--headers one division ends here-->
+        
         <!-- slider ends -->	
         
         
@@ -294,6 +295,50 @@ function validate(){
         </div>
         
         <!-- logo animation ends -->	
+        
+        <!-- About Section Start -->	
+        
+        	<div class="row" id="about_background">	
+        		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  	<div class="row">
+        		
+                	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                    <center><h1 id="text">ABOUT</h1></center>
+                    </div>
+                 
+                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
+                    
+                    </div>
+        			
+                    
+                        <div class="row">
+        				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+                        	We all are familiar with the Social Networking Sites (SNSs) and everyone is accessing one or another type of SNSs or may be all of these SNSs.  Due to the advancement in the field of technology, these social networking sites has become an important part of our lives and everyone has become so addictive to all these SNS’s that whenever we get our leisure time we start surfing these SNS’s. <br><br>
+But due to our busy schedule, it has become so challenging to surf all the SNSs and upload your post onto them one by one. So to overcome this issue, <i>"We have developing a common platform where a user can share same information / post on all these SNS’s at the same time using social API’s".</i> If someone has to share similar information/post to every SNS’s they have to login on our web based application for each service they use. <br><br>
+We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.
+
+                        </div>           
+                    </div>
+        
+        
+        
+        		</div>
+        	</div>
+        <!-- About Section ends -->	
+        
+        
+        
+        
+        
+        <!-- About Section Start -->	
+        
+        	
+        	
+        
+        
+        
+        <!-- About Section ends -->	
         
         
         

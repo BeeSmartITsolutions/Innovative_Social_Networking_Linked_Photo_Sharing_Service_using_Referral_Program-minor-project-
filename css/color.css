@@ -6,6 +6,12 @@
 #animate_logo_background{
 	background:#292421;
 }
+#about_background{
+	background:rgba(0,0,0,0.4);
+}
+#text:hover{
+	color:#FF6A6A;
+}
 .color:hover{
 	color:#C90;
 }
