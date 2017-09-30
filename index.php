@@ -304,7 +304,7 @@ function validate(){
         		
                 	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
-                    <center><h1 id="text">ABOUT</h1></center>
+                    <center><h1 id="text">About</h1></center>
                     </div>
                  
                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
@@ -331,14 +331,56 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.
         
         
         
-        <!-- About Section Start -->	
+        <!-- Features Section Start -->	
         
+        	<div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            		<div class="row">
+        		
+                	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                    <center><h1 id="text">Features</h1></center>
+                    </div>
+                 
+                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
+                    
+                    </div>
+                    
+                    
+            	<div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                	<h4>Simple & User-Friendly</h4>
+             		   
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                	<h4>Secure & Reliable</h4>
+             		 
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                	<h4>Compatible & Adaptable</h4>
+             		 
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                	<h4>Multi-tenancy</h4>
+             		 
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                	<h4>Performance</h4>
+             		 
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                	<h4>Mobility</h4>
+             		 
+                </div>
+                </div>
+            
+ 			</div>           
+            </div>
         	
-        	
         
         
         
-        <!-- About Section ends -->	
+        <!-- Features Section ends -->	
         
         
         
