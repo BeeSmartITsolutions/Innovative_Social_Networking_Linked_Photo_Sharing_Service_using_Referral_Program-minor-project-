@@ -1,12 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
+p{
+	color:#FFFFFF;
+}
+ul li{
+	color:#FFFFFF;
+}
+#text{
+	color:#ffffff;
+}
 #header{
 	background:#000000;
 }
 #animate_logo_background{
 	background:#292421;
 }
-#about_background{
+#text_background{
 	background:rgba(0,0,0,0.4);
 }
 #text:hover{

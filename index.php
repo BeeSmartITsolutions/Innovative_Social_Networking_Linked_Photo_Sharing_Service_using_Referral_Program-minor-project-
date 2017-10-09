@@ -60,7 +60,10 @@ function validate(){
 
 </head>
 
-<body style="background:url(images/back.png) no-repeat fixed; background-size:cover" >
+<body style="background:url(images/back2.jpg) no-repeat fixed; background-size:cover" >
+<? 
+include('databasse.php');
+?>
 <div class="container-fluid">
 
 	<!-- main start -->
@@ -112,7 +115,7 @@ function validate(){
                            
                             
 							
-                            <center> <img class="img-responsive" src="images/logo.png" /></center>
+                            <center> <img class="img-responsive" src="images/logo2.png" /></center>
                 
                 <center>
                
@@ -232,20 +235,20 @@ function validate(){
         	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
  			<div class="row" style="margin:50px 0px 50px 0px;">       		<center>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#3B5998; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
-                 <div class="flap1" style="background-color:#3B5998; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
-                 <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite "> <img src="images/fb.png" />
+                <div class="flap" style="background-color:#3B5998; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 5s infinite ">
+                 <div class="flap1" style="background-color:#3B5998; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 5s infinite ">
+                 <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 5s infinite "> <img src="images/fb.png" />
                
                 </div></div></div>
                 
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#55ACEE; width:100px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap" style="background-color:#55ACEE; width:100px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 4s infinite ">
                 
-                <div class="flap1" style="background-color:#55ACEE; width:100px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap1" style="background-color:#55ACEE; width:100px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 4s infinite ">
                 
-                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite "> <img src="images/twitter.png" />
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 4s infinite "> <img src="images/twitter.png" />
                 </div></div></div>
                 
                 </div>
@@ -271,21 +274,21 @@ function validate(){
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#125688; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
+                <div class="flap" style="background-color:#125688; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 4s infinite ">
                 
-                <div class="flap1" style="background-color:#125688; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
+                <div class="flap1" style="background-color:#125688; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 4s infinite ">
                 
-                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite "><img src="images/insta.png" />
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 4s infinite "><img src="images/insta.png" />
                 </div></div></div>
                 
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#cb2027; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap" style="background-color:#cb2027; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 5s infinite ">
                 
-                <div class="flap1" style="background-color:#cb2027; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap1" style="background-color:#cb2027; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 5s infinite ">
                 
-                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite "><img src="images/pinterest.png" />
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 5s infinite "><img src="images/pinterest.png" />
                 </div></div></div>
                 
                 </div>
@@ -298,9 +301,9 @@ function validate(){
         
         <!-- About Section Start -->	
         
-        	<div class="row" id="about_background">	
+        	<div class="row">	
         		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  	<div class="row">
+                  	<div class="row" >
         		
                 	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
@@ -311,13 +314,62 @@ function validate(){
                     
                     </div>
         			
-                    
-                        <div class="row">
-        				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
-                        	We all are familiar with the Social Networking Sites (SNSs) and everyone is accessing one or another type of SNSs or may be all of these SNSs.  Due to the advancement in the field of technology, these social networking sites has become an important part of our lives and everyone has become so addictive to all these SNS’s that whenever we get our leisure time we start surfing these SNS’s. <br><br>
+                        <div class="row" style="padding:0px 0px 10px 0px;">
+        				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>We all are familiar with the Social Networking Sites (SNSs) and everyone is accessing one or another type of SNSs or may be all of these SNSs.  Due to the advancement in the field of technology, these social networking sites has become an important part of our lives and everyone has become so addictive to all these SNS’s that whenever we get our leisure time we start surfing these SNS’s. <br><br>
 But due to our busy schedule, it has become so challenging to surf all the SNSs and upload your post onto them one by one. So to overcome this issue, <i>"We have developing a common platform where a user can share same information / post on all these SNS’s at the same time using social API’s".</i> If someone has to share similar information/post to every SNS’s they have to login on our web based application for each service they use. <br><br>
-We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.
+We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
 
+                        </div>           
+                    </div>
+        
+        
+        		</div>
+        	</div>
+        <!-- About Section ends -->	
+        
+        
+        
+        
+        
+        <!-- Team Members Start -->	
+        
+        	<div class="row" id="text_background">	
+        		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  	<div class="row">
+        		
+                	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                    <center><h1 id="text">Team Members</h1></center>
+                    </div>
+                 
+                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
+	                    
+                    </div>
+        			
+                    <div class="row">
+        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                        
+                        </div>           
+        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                        
+                        </div>           
+        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                        
+                        </div>           
+                    </div>
+                    
+                        <div class="row" style="padding:0px 0px 10px 0px;">
+        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+        				 
+                        <p>We all are familiar with the Social Networking Sites (SNSs) and everyone is accessing one or another type of SNSs or may be all of these SNSs. </p>
+                
+                        </div>           
+        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                        
+                        </div>           
+        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                        
                         </div>           
                     </div>
         
@@ -326,6 +378,15 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.
         		</div>
         	</div>
         <!-- About Section ends -->	
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -349,36 +410,51 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.
                     
             	<div class="row">
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                	<h4>Simple & User-Friendly</h4>
+               
+                	<h4><font color="#FFFFFF">Simple & User-Friendly</font></h4>
+                   <ul>
+                    <li>Easily accessible using the login portal.</li>
+                    <li>Interactive and attractive UI/UX design which is easily understandable and less complex.</li>
+                    <li>Simple and interactive architecture which makes it easy to use.</li>
+                    </ul>
              		   
                 </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                	<h4>Secure & Reliable</h4>
-             		 
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">              	<h4><font color="#FFFFFF">Secure & Reliable</font></h4>
+                <ul>        
+                     <li>It has an isolated environment to provide confidentiality and authentication for each user.</li>
+<li>It is highly secured using HTTP/HTTPS protocol and SSL encryption over the network.</li>
+                    <li>A user can trust this web based application regarding his/her personal information.</li>
+                    <li>This application is reliable in terms of ubiquitous as it is accessible anywhere, anytime and from any device.</li>
+                    </ul>
+             
                 </div>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                	<h4>Compatible & Adaptable</h4>
-             		 
+                	<h4><font color="#FFFFFF">Compatible & Adaptable</font></h4>
+                
+                     <ul>
+                     <li>Easily accessible using the login portal.</li>
+                    <li>Interactive and attractive UI/UX design which is easily understandable and less complex.</li>
+                    </ul>
+             		
                 </div>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                	<h4>Multi-tenancy</h4>
-             		 
+                	<h4><font color="#FFFFFF">Multi-tenancy</font></h4>
+             	 
                 </div>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                	<h4>Performance</h4>
-             		 
+                	<h4><font color="#FFFFFF">Performance</font></h4>
+             		
                 </div>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                	<h4>Mobility</h4>
-             		 
+                	<h4><font color="#FFFFFF">Mobility</font></h4>
+             		
+                    
+                  
                 </div>
                 </div>
             
  			</div>           
             </div>
-        	
-        
-        
         
         <!-- Features Section ends -->	
         
