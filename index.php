@@ -58,6 +58,9 @@ function validate(){
 <!-- End Slider -->
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body style="background:url(images/back2.jpg) no-repeat fixed; background-size:cover" >
@@ -352,7 +355,7 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
         				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
                         <?php
 						include ("database.php");
-						$rs=mysql_query("select * from team_members");
+						$rs=mysql_query("select * from team_members where fname= 'Mohit'");
 						if(mysql_num_rows($rs)<1)
 						{
 							echo'<p class="danger">No rows are present</p>';
@@ -361,12 +364,30 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
 						{
 							
 							while ($row = mysql_fetch_array($rs)) 
-							{
-								echo '<center><img class="img-circle" src="'.$row['pic'].'.jpg"><br>
-                           <strong><a href="http://mohitthakur.000webhostapp.com" target="_blank">'.$row['fname'] .$row['lname'] .'</a></strong><br>
-						   ' .$row['roles'].'<br>
+							{						
+								echo '<center>
+								<div class="card">
+<img class="img-responsive img-rounded"  width="auto" alt="Mohit Thakur" src="images/team/scan.jpg">
+                           <h3><a href="http://mohitthakur.000webhostapp.com" target="_blank">' .$row['fname'].' '.$row['lname'].'</a></h3><p class="title">
+						   ' .$row['roles'].'<br></p><p>
 						   ' .$row['year'].'<br>
-						   ' .$row['univ'].'</center>';
+						   ' .$row['univ'].'</p>
+						   
+						   
+						   <div style="margin: 20px 0;">
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #000000;;"><i class="fa fa-instagram" style="font-size:24px; padding:10px"></i></a> 
+							<a href="#"><i class="fa fa-twitter" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#"><i class="fa fa-linkedin" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#"><i class="fa fa-facebook" style="font-size:24px; padding:10px"></i></a>
+							<a href="#"><i class="fa fa-github" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#"><i class="fa fa-quora" style="font-size:24px; padding:10px"></i></a> 
+						 </div> 
+						 <p><button>Contact</button></p>
+						</div>
+		
+						   
+						   </center>
+						   ';
 						   }
 	  					}
                         ?>
@@ -379,8 +400,6 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
                         <div class="row" style="padding:0px 0px 10px 0px;">
         				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
         				 
-                        <p>We all are familiar with the Social Networking Sites (SNSs) and everyone is accessing one or another type of SNSs or may be all of these SNSs. </p>
-                
                         </div>           
         				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
                         
