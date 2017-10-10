@@ -357,7 +357,8 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
                          <?php
 						
         				 include ("database.php");
-						$rs=mysql_query("select * from team_members");
+						 
+						 $rs=mysql_query("select * from team_members where fname ='Mohit'");
 						if(mysql_num_rows($rs)<1)
 						{
 							echo'<p class="danger">No rows are present</p>';
@@ -371,7 +372,47 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
 								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> 
 								<div class="card">
 <center><img class="img-responsive img-rounded"  width="auto" alt="' .$row['fname'].' '.$row['lname'].'" src="images/team/'.$row['fname'].'.jpg"></center>
-                           <h3 style="color:#ffffff;">' .$row['fname'].' '.$row['lname'].'</a></h3>
+                           <h3 style="color:#ffffff;"><a href="http://mohitthakur.000webhostapp.com" style="text-decoration: none; color: #FFFFFF;">' .$row['fname'].' '.$row['lname'].'</a></h3>
+						   <p class="title">
+						   ' .$row['roles'].'<br></p><p>
+						   ' .$row['year'].'<br>
+						   ' .$row['univ'].'</p>
+						   
+						   
+						   <div style="margin: 20px 0;">
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-instagram" style="font-size:24px; padding:10px"></i></a> 
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-twitter" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-linkedin" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-facebook" style="font-size:24px; padding:10px"></i></a>
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-github" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-quora" style="font-size:24px; padding:10px"></i></a> 
+						 </div> 
+						 
+						</div>
+		
+						   
+						 </div>  </center>
+						   ';
+						   }
+	  					}
+						 
+						 
+						 
+						$rs=mysql_query("select * from team_members where fname!='Mohit'");
+						if(mysql_num_rows($rs)<1)
+						{
+							echo'<p class="danger">No rows are present</p>';
+						}
+						else
+						{
+							
+							while ($row = mysql_fetch_array($rs)) 
+							{						
+								echo '<center>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> 
+								<div class="card">
+<center><img class="img-responsive img-rounded"  width="auto" alt="' .$row['fname'].' '.$row['lname'].'" src="images/team/'.$row['fname'].'.jpg"></center>
+                           <h3 style="color:#ffffff;">' .$row['fname'].' '.$row['lname'].'</h3>
 						   <p class="title">
 						   ' .$row['roles'].'<br></p><p>
 						   ' .$row['year'].'<br>
@@ -402,18 +443,7 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
         
         		</div>
         	</div>
-        <!-- About Section ends -->	
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <!-- Team Section ends -->	
         
         
         
@@ -488,9 +518,53 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
         
         
         
+        <!-- Contact Section Start -->	
+        
+        	<div class="row" style="background:url(images/contact.jpg) no-repeat; background-size:cover;">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background:rgba(0,0,0,0.4); margin:50px 0px 50px 0px">
+            		<div class="row">
+        		
+                	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"> 
+                    <center><p>
+                    Mohit Thakur : +91-7015371886<br>                    Kunal Kaushik : +91-7015371886<br>                    Akshay Puri : +91-7015371886<br>                    Neeraj Sharma : +91-7015371886<br>                   
+                    
+                    </p></center>
+                    </div>
+                 
+                    
+                    </div>
+                    
+                    
+            	
+            
+ 			</div>           
+            </div>
+        
+        <!-- Contact Section ends -->	
         
         
+         <!-- Footer Section Start -->	
         
+        	<div class="row" style="background:#262422;">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin:10px 0px 10px 0px">
+            		<div class="row">
+        		
+                	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"> 
+                    <center><p>&copy; Copyright <a href="http://mohitthakur.000webhostapp.com" style="text-decoration:none; color:#ffffff;">Mohit Thakur</a>.<br> Website Designer and Developer</p></center>
+                    </div>
+                 
+                    
+                    </div>
+                    
+                    
+            	
+            
+ 			</div>           
+            </div>
+        
+        <!-- Footer Section ends -->	   
         
         
 		</div>
