@@ -61,10 +61,40 @@ function validate(){
 </head>
 
 <body>
-
-<?
+<?php
 
 include('../database.php');
+
+
+				if(isset($_POST['submit']))
+{
+	
+	
+		$pic = $_FILES['pic']['name'];
+		$temp_image= $_FILES['pic']['tmp_name'];
+		move_uploaded_file($_FILES['pic']['tmp_name'],'uploads/'.$_FILES['pic']['name']);
+		
+		$fname = $_POST['fname'];
+		$lname = $_POST['lname'];
+		$roles = $_POST['roles'];
+		$year = $_POST['year'];
+		$univ = $_POST['univ'];
+		
+		
+		$query = mysql_query("INSERT INTO team_members VALUES('$pic','$fname','$lname','$roles','$year','$univ')")or die("" . mysql_error());
+		
+		if($query)
+		{
+			echo'<script type="text/javascript">alert("Files Uploaded successfully")</script>';
+		}
+		else
+		{
+			echo 'Querry failed';
+		}
+
+}
+?>
+<?php
 
 echo '<form name="upload" method="post" action="" enctype="multipart/form-data">
          
@@ -93,43 +123,13 @@ echo '<form name="upload" method="post" action="" enctype="multipart/form-data">
         </div>
 
        <div class="form-group">
-             <center> <button type="submit" name="submit" id="sub" class="button btn" onClick="validate()"><span class="glyphicon glyphicon-log-in">&nbsp;Login</span></button>
+             <center> <input type="submit" name="submit" id="sub" onClick="validate()"><span class="glyphicon glyphicon-log-in">&nbsp;Submit</span></button>
              &nbsp;&nbsp;&nbsp; <button type="reset" name="reset" id="res" class="button btn" ><span class="glyphicon glyphicon-remove-sign">&nbsp;Reset</span></button>
              </center>
              </div>
         </form>
         		';
-				
-				
-				if(isset($_POST['submit']))
-{
-	
-	
-		$pic = $_FILES['pic']['name'];
-		$temp_image= $_FILES['pic']['tmp_name'];
-		move_uploaded_file($_FILES['pic']['tmp_name'],'uploads/'.$_FILES['pic']['name']);
-		
-		$fname = $_POST['fname'];
-		$lname = $_POST['lname'];
-		$roles = $_POST['roles'];
-		$year = $_POST['year'];
-		$univ = $_POST['univ'];
-		
-		
-		$query = mysql_query("INSERT INTO team members VALUES('$pic','$fname','$lname','$roles','$year','$univ')")or die("" . mysql_error());
-		
-		if($query)
-		{
-			echo'<script type="text/javascript">alert("Files Uploaded successfully")</script>';
-		}
-		else
-		{
-			echo 'Querry failed';
-		}
-
-}
-
-				
+							
 				
 ?>
 

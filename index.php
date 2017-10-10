@@ -61,9 +61,7 @@ function validate(){
 </head>
 
 <body style="background:url(images/back2.jpg) no-repeat fixed; background-size:cover" >
-<? 
-include('databasse.php');
-?>
+
 <div class="container-fluid">
 
 	<!-- main start -->
@@ -352,7 +350,26 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
                         
                         </div>           
         				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
-                        
+                        <?php
+						include ("database.php");
+						$rs=mysql_query("select * from team_members");
+						if(mysql_num_rows($rs)<1)
+						{
+							echo'<p class="danger">No rows are present</p>';
+						}
+						else
+						{
+							
+							while ($row = mysql_fetch_array($rs)) 
+							{
+								echo '<center><img class="img-circle" src="'.$row['pic'].'.jpg"><br>
+                           <strong><a href="http://mohitthakur.000webhostapp.com" target="_blank">'.$row['fname'] .$row['lname'] .'</a></strong><br>
+						   ' .$row['roles'].'<br>
+						   ' .$row['year'].'<br>
+						   ' .$row['univ'].'</center>';
+						   }
+	  					}
+                        ?>
                         </div>           
         				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
                         
