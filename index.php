@@ -302,9 +302,12 @@ function validate(){
         
         <!-- About Section Start -->	
         
-        	<div class="row">	
+        	<div class="row" style="background:#000000">	
+        		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background:url(images/back.png) no-repeat center fixed">
+                <div class="row" style="background:rgba(0,0,0,0.4)">	
         		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  	<div class="row" >
+                
+                  	<div class="row">
         		
                 	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
@@ -314,7 +317,7 @@ function validate(){
                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
                     
                     </div>
-        			
+        			<br>
                         <div class="row" style="padding:0px 0px 10px 0px;">
         				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <p>We all are familiar with the Social Networking Sites (SNSs) and everyone is accessing one or another type of SNSs or may be all of these SNSs.  Due to the advancement in the field of technology, these social networking sites has become an important part of our lives and everyone has become so addictive to all these SNS’s that whenever we get our leisure time we start surfing these SNS’s. <br><br>
@@ -324,8 +327,9 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
                         </div>           
                     </div>
         
-        
-        		</div>
+                </div>
+                </div>
+                </div>
         	</div>
         <!-- About Section ends -->	
         
@@ -335,27 +339,25 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
         
         <!-- Team Members Start -->	
         
-        	<div class="row" id="text_background">	
+        	<div class="row">	
         		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                   	<div class="row">
         		
                 	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
-                    <center><h1 id="text">Team Members</h1></center>
+                    <center><h1 id="text">Team Members</h1></center><br>
                     </div>
                  
                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
 	                    
                     </div>
-        			
-                    <div class="row">
-        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+
+                    <div class="row" style="padding:0px 0px 10px 0px;">
                         
-                        </div>           
-        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
-                        <?php
-						include ("database.php");
-						$rs=mysql_query("select * from team_members where fname= 'Mohit'");
+                         <?php
+						
+        				 include ("database.php");
+						$rs=mysql_query("select * from team_members");
 						if(mysql_num_rows($rs)<1)
 						{
 							echo'<p class="danger">No rows are present</p>';
@@ -366,47 +368,34 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
 							while ($row = mysql_fetch_array($rs)) 
 							{						
 								echo '<center>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> 
 								<div class="card">
-<img class="img-responsive img-rounded"  width="auto" alt="Mohit Thakur" src="images/team/scan.jpg">
-                           <h3><a href="http://mohitthakur.000webhostapp.com" target="_blank">' .$row['fname'].' '.$row['lname'].'</a></h3><p class="title">
+<center><img class="img-responsive img-rounded"  width="auto" alt="' .$row['fname'].' '.$row['lname'].'" src="images/team/'.$row['fname'].'.jpg"></center>
+                           <h3 style="color:#ffffff;">' .$row['fname'].' '.$row['lname'].'</a></h3>
+						   <p class="title">
 						   ' .$row['roles'].'<br></p><p>
 						   ' .$row['year'].'<br>
 						   ' .$row['univ'].'</p>
 						   
 						   
 						   <div style="margin: 20px 0;">
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #000000;;"><i class="fa fa-instagram" style="font-size:24px; padding:10px"></i></a> 
-							<a href="#"><i class="fa fa-twitter" style="font-size:24px; padding:10px"></i></a>  
-							<a href="#"><i class="fa fa-linkedin" style="font-size:24px; padding:10px"></i></a>  
-							<a href="#"><i class="fa fa-facebook" style="font-size:24px; padding:10px"></i></a>
-							<a href="#"><i class="fa fa-github" style="font-size:24px; padding:10px"></i></a>  
-							<a href="#"><i class="fa fa-quora" style="font-size:24px; padding:10px"></i></a> 
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-instagram" style="font-size:24px; padding:10px"></i></a> 
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-twitter" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-linkedin" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-facebook" style="font-size:24px; padding:10px"></i></a>
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-github" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-quora" style="font-size:24px; padding:10px"></i></a> 
 						 </div> 
-						 <p><button>Contact</button></p>
+						 
 						</div>
 		
 						   
-						   </center>
+						 </div>  </center>
 						   ';
 						   }
 	  					}
                         ?>
-                        </div>           
-        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
-                        
-                        </div>           
-                    </div>
-                    
-                        <div class="row" style="padding:0px 0px 10px 0px;">
-        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
-        				 
-                        </div>           
-        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
-                        
-                        </div>           
-        				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
-                        
-                        </div>           
+          
                     </div>
         
         
@@ -430,14 +419,14 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
         
         <!-- Features Section Start -->	
         
-        	<div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        	<div class="row" style="background:url(images/features.jpg) fixed">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background:rgba(0,0,0,0.4)">
             		<div class="row">
         		
                 	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
                     <center><h1 id="text">Features</h1></center>
-                    </div>
+                   <br> </div>
                  
                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
                     
