@@ -94,10 +94,10 @@ function validate(){
                     <ul class="nav nav-pills">
                     
                     <li><a href="index.php" style="color:#FFF;">Home</a></li>
-                    <li><a href="#about" style="color:#FFF;">About</a></li>
-                    <li><a href="#features" style="color:#FFF;">Features</a></li>
-                    <li><a href="#extra" style="color:#FFF;">Achievements</a></li>
-                    <li><a href="#contact" style="color:#FFF;">Contact</a></li>
+                    <li><a href="#about_section" style="color:#FFF;">About</a></li>
+                    <li><a href="#team_section" style="color:#FFF;">Team</a></li>
+                    <li><a href="#feature_section" style="color:#FFF;">Features</a></li>
+                    <li><a href="#contact_section" style="color:#FFF;">Contact</a></li>
                     <li><a href="#" id="modal" style="text-decoration:none; color:#FFF;">Login</a></li>
                     
                     
@@ -116,7 +116,7 @@ function validate(){
                            
                             
 							
-                            <center> <img class="img-responsive" src="images/logo2.png" /></center>
+                            <center> <img class="img-responsive" src="images/logo.png" /></center>
                 
                 <center>
                
@@ -236,60 +236,60 @@ function validate(){
         	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
  			<div class="row" style="margin:50px 0px 50px 0px;">       		<center>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#3B5998; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 5s infinite ">
-                 <div class="flap1" style="background-color:#3B5998; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 5s infinite ">
-                 <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 5s infinite "> <img src="images/fb.png" />
+                <div class="flap" style="background-color:#3B5998; width:90px; height:90px; margin-top:auto; transform:rotate(30deg); animation:roll 5s infinite ">
+                 <div class="flap1" style="background-color:#3B5998; width:90px; height:90px; margin-top:auto; transform:rotate(30deg); animation:roll 5s infinite ">
+                 <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 5s infinite "> <img src="images/fb.png" width="90" height="90"/>
                
                 </div></div></div>
                 
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#55ACEE; width:100px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 4s infinite ">
+                <div class="flap" style="background-color:#55ACEE; width:90px; height:89px; margin-top:auto; transform:rotate(30deg); animation:roll1 4s infinite ">
                 
-                <div class="flap1" style="background-color:#55ACEE; width:100px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 4s infinite ">
+                <div class="flap1" style="background-color:#55ACEE; width:90px; height:89px; margin-top:auto; transform:rotate(30deg); animation:roll1 4s infinite ">
                 
-                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 4s infinite "> <img src="images/twitter.png" />
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 4s infinite "> <img src="images/twitter.png" width="90" height="89"/>
                 </div></div></div>
                 
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#dd4b39; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
+                <div class="flap" style="background-color:#dd4b39; width:90px; height:90px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
                 
-                <div class="flap1" style="background-color:#dd4b39; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
+                <div class="flap1" style="background-color:#dd4b39; width:90px; height:90px; margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite ">
                 
-                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite "> <img src="images/google+.png" />
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 3s infinite "> <img src="images/google+.png" width="90" height="90"/>
                 </div></div></div>
                 
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#007bb5; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap" style="background-color:#007bb5; width:90px; height:90px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
                 
-                <div class="flap1" style="background-color:#007bb5; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
+                <div class="flap1" style="background-color:#007bb5; width:90px; height:90px; margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite ">
                 
-                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite "> <img src="images/linkedin.png" />
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 3s infinite "> <img src="images/linkedin.png" width="90" height="90"/>
                 </div></div></div>
                 
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#125688; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 4s infinite ">
+                <div class="flap" style="background-color:#125688; width:90px; height:90px; margin-top:auto; transform:rotate(30deg); animation:roll 4s infinite ">
                 
-                <div class="flap1" style="background-color:#125688; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll 4s infinite ">
+                <div class="flap1" style="background-color:#125688; width:90px; height:90px; margin-top:auto; transform:rotate(30deg); animation:roll 4s infinite ">
                 
-                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 4s infinite "><img src="images/insta.png" />
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll 4s infinite "><img src="images/insta.png" width="90" height="90"/>
                 </div></div></div>
                 
                 </div>
                 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <div class="flap" style="background-color:#cb2027; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 5s infinite ">
+                <div class="flap" style="background-color:#cb2027; width:90px; height:90px; margin-top:auto; transform:rotate(30deg); animation:roll1 5s infinite ">
                 
-                <div class="flap1" style="background-color:#cb2027; width:99px; height:99px; margin-top:auto; transform:rotate(30deg); animation:roll1 5s infinite ">
+                <div class="flap1" style="background-color:#cb2027; width:90px; height:90px; margin-top:auto; transform:rotate(30deg); animation:roll1 5s infinite ">
                 
-                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 5s infinite "><img src="images/pinterest.png" />
+                <div class="flap2" style="margin-top:auto; transform:rotate(30deg); animation:roll1 5s infinite "><img src="images/pinterest.png" width="90" height="90"/>
                 </div></div></div>
                 
                 </div>
@@ -302,7 +302,7 @@ function validate(){
         
         <!-- About Section Start -->	
         
-        	<div class="row" style="background:#000000">	
+        	<div id="about_section" class="row" style="background:#000000">	
         		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background:url(images/back.png) no-repeat center fixed">
                 <div class="row" style="background:rgba(0,0,0,0.4)">	
         		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -339,7 +339,7 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
         
         <!-- Team Members Start -->	
         
-        	<div class="row">	
+        	<div id="team_section" class="row">	
         		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                   	<div class="row">
         		
@@ -449,7 +449,7 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
         
         <!-- Features Section Start -->	
         
-        	<div class="row" style="background:url(images/features.jpg) fixed">
+        	<div id="feature_section" class="row" style="background:url(images/features.jpg) fixed">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background:rgba(0,0,0,0.4)">
             		<div class="row">
         		
@@ -487,21 +487,31 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
                 	<h4><font color="#FFFFFF">Compatible & Adaptable</font></h4>
                 
                      <ul>
-                     <li>Easily accessible using the login portal.</li>
-                    <li>Interactive and attractive UI/UX design which is easily understandable and less complex.</li>
+                     <li>This web based application is adaptable to any environment. </li>
+                    <li>This application is browser compatible, OS compatible, device compatible and hardware compatible thus ensures flexibility.
+</li>
                     </ul>
              		
                 </div>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 	<h4><font color="#FFFFFF">Multi-tenancy</font></h4>
+                    <ul>
+                     <li>This web based application is based on SIMM (Single Instance Multi-tenancy Model) and thus provides the service to multiple users.</li>
+                    </ul>
              	 
                 </div>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 	<h4><font color="#FFFFFF">Performance</font></h4>
+                    <ul>
+                     <li>This application is light-weight which improves the performance and makes it faster and smoother.</li>
+                    </ul>
              		
                 </div>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 	<h4><font color="#FFFFFF">Mobility</font></h4>
+                    <ul>
+                     <li>This application is accessible form any geographical point without restrictions.</li>
+                    </ul>
              		
                     
                   
@@ -520,7 +530,7 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
         
         <!-- Contact Section Start -->	
         
-        	<div class="row" style="background:url(images/contact.jpg) no-repeat; background-size:cover;">
+        	<div id="contact_section" class="row" style="background:url(images/contact.jpg) fixed no-repeat; background-size:cover;">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background:rgba(0,0,0,0.4); margin:50px 0px 50px 0px">
             		<div class="row">
         		
@@ -546,14 +556,15 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
         
          <!-- Footer Section Start -->	
         
-        	<div class="row" style="background:#262422;">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin:10px 0px 10px 0px">
+        	<div class="row" style="background:rgba(0,0,0,0.4);">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin:20px 0px 10px 0px">
             		<div class="row">
         		
                 	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
-                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"> 
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
                     <center><p>&copy; Copyright <a href="http://mohitthakur.000webhostapp.com" style="text-decoration:none; color:#ffffff;">Mohit Thakur</a>.<br> Website Designer and Developer</p></center>
                     </div>
+                	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
                  
                     
                     </div>
