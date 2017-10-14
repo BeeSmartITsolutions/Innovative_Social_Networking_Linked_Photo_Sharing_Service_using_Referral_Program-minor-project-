@@ -381,13 +381,13 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
 						   
 						   <div style="margin: 20px 0;">
 							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-instagram" style="font-size:24px; padding:10px"></i></a> 
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-twitter" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-envelope" style="font-size:24px; padding:10px"></i></a>  
 							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-linkedin" style="font-size:24px; padding:10px"></i></a>  
 							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-facebook" style="font-size:24px; padding:10px"></i></a>
 							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-github" style="font-size:24px; padding:10px"></i></a>  
 							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-quora" style="font-size:24px; padding:10px"></i></a> 
 						 </div> 
-						 
+						 <p><button><a href="#contact_section" style="text-decoration: none; font-size: 22px; color: #FFFFFF;">Contact</a></button></p>
 						</div>
 		
 						   
@@ -414,20 +414,20 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
 <center><img class="img-responsive img-rounded"  width="auto" alt="' .$row['fname'].' '.$row['lname'].'" src="images/team/'.$row['fname'].'.jpg"></center>
                            <h3 style="color:#ffffff;">' .$row['fname'].' '.$row['lname'].'</h3>
 						   <p class="title">
-						   ' .$row['roles'].'<br></p><p>
+						   ' .$row['roles'].'<br></p><br><p>
 						   ' .$row['year'].'<br>
 						   ' .$row['univ'].'</p>
 						   
 						   
 						   <div style="margin: 20px 0;">
 							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-instagram" style="font-size:24px; padding:10px"></i></a> 
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-twitter" style="font-size:24px; padding:10px"></i></a>  
+							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-envelope" style="font-size:24px; padding:10px"></i></a>  
 							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-linkedin" style="font-size:24px; padding:10px"></i></a>  
 							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-facebook" style="font-size:24px; padding:10px"></i></a>
 							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-github" style="font-size:24px; padding:10px"></i></a>  
 							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-quora" style="font-size:24px; padding:10px"></i></a> 
 						 </div> 
-						 
+						<p><button><a href="#contact_section" style="text-decoration: none; font-size: 22px; color: #FFFFFF;">Contact</a></button></p>
 						</div>
 		
 						   
