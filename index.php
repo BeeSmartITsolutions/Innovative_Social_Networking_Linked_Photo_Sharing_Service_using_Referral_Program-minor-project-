@@ -64,7 +64,46 @@ function validate(){
 </head>
 
 <body style="background:url(images/back2.jpg) no-repeat fixed; background-size:cover" >
+<?php 
+session_start();
 
+include ("database.php");
+
+if(isset($_POST['submit']))
+{
+	$email=$_POST['email'];
+
+	$pass=$_POST['pass'];
+
+	$rs= mysql_query("select * from sign_up/in where email_id='$email' and password='$pass'");
+	while ($row = mysql_fetch_array($rs)) {
+		
+	if(mysql_num_rows($rs)<1)
+	{
+		echo'<h4><p align="center" class="danger">Error while Signing in.</p></h4><br><h5><p align="center" class="danger">Reason may be deatils not found, Please try Signing up or Contact to Administrator.</p></h5>';
+	}
+	else{
+		$_SESSION['email']=$email;
+		$_SESSION['name']= $row['first_name'];
+		
+	}
+	
+	
+	}
+	
+	if(isset($_SESSION['email'])&&isset($_SESSION['name']))
+	{
+		header("location:welcome.php");
+	}
+	else
+	{	
+		header("location:index.php");
+	}
+	
+}
+
+
+?>
 <div class="container-fluid">
 
 	<!-- main start -->
@@ -134,15 +173,6 @@ function validate(){
              &nbsp;&nbsp;&nbsp;<button type="reset" name="reset" id="res" class="button btn" ><span class="glyphicon glyphicon-remove-sign">&nbsp;Reset</span></button>
              </center>
              </div>
-           <?php
-		  function error($error)
-			{
-				if($error=="N")
-				   {
-						echo'<h4><p align="center" class="danger">Error while signing in.</p></h4>';   
-				   }
-			}
-           ?>
         </form>
         					</div>            
                            
@@ -356,8 +386,6 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
                         
                          <?php
 						
-        				 include ("database.php");
-						 
 						 $rs=mysql_query("select * from team_members where fname ='Mohit'");
 						if(mysql_num_rows($rs)<1)
 						{
@@ -477,7 +505,6 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">              	<h4><font color="#FFFFFF">Secure & Reliable</font></h4>
                 <ul>        
                      <li>It has an isolated environment to provide confidentiality and authentication for each user.</li>
-<li>It is highly secured using HTTP/HTTPS protocol and SSL encryption over the network.</li>
                     <li>A user can trust this web based application regarding his/her personal information.</li>
                     <li>This application is reliable in terms of ubiquitous as it is accessible anywhere, anytime and from any device.</li>
                     </ul>
@@ -488,8 +515,7 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
                 
                      <ul>
                      <li>This web based application is adaptable to any environment. </li>
-                    <li>This application is browser compatible, OS compatible, device compatible and hardware compatible thus ensures flexibility.
-</li>
+                     <li>This application is browser compatible, OS compatible, device compatible and hardware compatible thus ensures flexibility.</li>
                     </ul>
              		
                 </div>
@@ -525,33 +551,6 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
         
         
         
-        
-        
-        
-        <!-- Contact Section Start -->	
-        
-        	<div id="contact_section" class="row" style="background:url(images/contact.jpg) fixed no-repeat; background-size:cover;">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background:rgba(0,0,0,0.4); margin:50px 0px 50px 0px">
-            		<div class="row">
-        		
-                	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> </div>
-                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"> 
-                    <center><p>
-                    Mohit Thakur : +91-7015371886<br>                    Kunal Kaushik : +91-7015371886<br>                    Akshay Puri : +91-7015371886<br>                    Neeraj Sharma : +91-7015371886<br>                   
-                    
-                    </p></center>
-                    </div>
-                 
-                    
-                    </div>
-                    
-                    
-            	
-            
- 			</div>           
-            </div>
-        
-        <!-- Contact Section ends -->	
         
         
          <!-- Footer Section Start -->	
