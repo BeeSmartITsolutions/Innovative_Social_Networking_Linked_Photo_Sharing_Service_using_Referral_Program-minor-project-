@@ -380,12 +380,12 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
 						   
 						   
 						   <div style="margin: 20px 0;">
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-instagram" style="font-size:24px; padding:10px"></i></a> 
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-envelope" style="font-size:24px; padding:10px"></i></a>  
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-linkedin" style="font-size:24px; padding:10px"></i></a>  
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-facebook" style="font-size:24px; padding:10px"></i></a>
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-github" style="font-size:24px; padding:10px"></i></a>  
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-quora" style="font-size:24px; padding:10px"></i></a> 
+							<a href="' .$row['insta'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-instagram" style="font-size:24px; padding:10px"></i></a> 
+							<a href="' .$row['gmail'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-envelope" style="font-size:24px; padding:10px"></i></a>  
+							<a href="' .$row['linkedin'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-linkedin" style="font-size:24px; padding:10px"></i></a>  
+							<a href="' .$row['fb'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-facebook" style="font-size:24px; padding:10px"></i></a>
+							<a href="' .$row['github'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-github" style="font-size:24px; padding:10px"></i></a>  
+							<a href="' .$row['quora'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-quora" style="font-size:24px; padding:10px"></i></a> 
 						 </div> 
 						 <p><button><a href="#contact_section" style="text-decoration: none; font-size: 22px; color: #FFFFFF;">Contact</a></button></p>
 						</div>
@@ -420,12 +420,12 @@ We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
 						   
 						   
 						   <div style="margin: 20px 0;">
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-instagram" style="font-size:24px; padding:10px"></i></a> 
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-envelope" style="font-size:24px; padding:10px"></i></a>  
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-linkedin" style="font-size:24px; padding:10px"></i></a>  
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-facebook" style="font-size:24px; padding:10px"></i></a>
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-github" style="font-size:24px; padding:10px"></i></a>  
-							<a href="#" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-quora" style="font-size:24px; padding:10px"></i></a> 
+							<a href="' .$row['insta'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-instagram" style="font-size:24px; padding:10px"></i></a> 
+							<a href="' .$row['gmail'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-envelope" style="font-size:24px; padding:10px"></i></a>  
+							<a href="' .$row['linkedin'].'"  target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-linkedin" style="font-size:24px; padding:10px"></i></a>  
+							<a href="' .$row['fb'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-facebook" style="font-size:24px; padding:10px"></i></a>
+							<a href="' .$row['github'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-github" style="font-size:24px; padding:10px"></i></a>  
+							<a href="' .$row['quora'].'" target="_blank" style="text-decoration: none; font-size: 22px; color: #FFFFFF;"><i class="fa fa-quora" style="font-size:24px; padding:10px"></i></a> 
 						 </div> 
 						<p><button><a href="#contact_section" style="text-decoration: none; font-size: 22px; color: #FFFFFF;">Contact</a></button></p>
 						</div>
