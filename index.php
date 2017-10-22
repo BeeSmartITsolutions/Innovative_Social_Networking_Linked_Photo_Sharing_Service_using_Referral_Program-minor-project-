@@ -123,7 +123,7 @@ if(isset($_POST['submit']))
 
 	$pass=$_POST['pass'];
 
-	$rs= mysql_query("select * from sign_up/in where email_id='$email' and password='$pass'");
+	$rs= mysql_query("select * from signup_signin where email_id='$email' and password='$pass'");
 	while ($row = mysql_fetch_array($rs)) {
 		
 	if(mysql_num_rows($rs)<1)
@@ -237,35 +237,7 @@ if(isset($_POST['submit']))
                         
 <div id="overlay" ondblclick="off()">
   <div id="overlaytext">
- <?php
- if (isset($_POST['submit1']))
- {
-	 $sr = '';
-	 $pic = $_FILES['pic']['name'];
-		$temp_image= $_FILES['pic']['tmp_name'];
-		move_uploaded_file($_FILES['pic']['tmp_name'],'uploads/users'.$_FILES['pic']['name']);
-		
-	 $fn= $_POST['fn'];
-	 $ln= $_POST['ln'];
-	 $gender= $_POST['gender'];
-	 $cn= $_POST['cn'];
-	 $add= $_POST['add'];
-	 $email=$_POST['emailid'];
-	 $pass=$_POST['pass'];
-
-	 $query = mysql_query("INSERT INTO sign_up/in VALUES('$sr','$pic','$fn','$ln','$email','$pass','$add','$gender','$cn')")or die("" . mysql_error());
-		
-		if($query)
-		{
-			echo'<script type="text/javascript">alert("Files Uploaded successfully")</script>';
-		}
-		else
-		{
-			echo 'Querry failed';
-		}
-
- }
- ?>
+ 
      <center> <img src="images/logo.png" class="img-responsive" width="138" height="138"/>
                
                	<h1><font face="Times New Roman, Times, serif">Sign Up</font></h1></center>
@@ -310,10 +282,38 @@ if(isset($_POST['submit']))
         </div>
       
       <div class="form-group">
-      <center><input type ="submit" name="submit1" value="Sign Up" id="submit1" class="button" onClick="signupvalidate()"></center>
+      <center><input type ="submit" name="submit1" value="Sign Up" id="submit1" class="button"></center>
       </div>  
   </form>
-  
+  <?php
+ if(isset($_POST['submit1']))
+ {
+	 $sr = '';
+	 $pic = $_FILES['pic']['name'];
+		$temp_image= $_FILES['pic']['tmp_name'];
+		move_uploaded_file($_FILES['pic']['tmp_name'],'uploads/users'.$_FILES['pic']['name']);
+		
+	 $fn= $_POST['fn'];
+	 $ln= $_POST['ln'];
+	 $gender= $_POST['gender'];
+	 $cn= $_POST['cn'];
+	 $add= $_POST['add'];
+	 $email=$_POST['emailid'];
+	 $pass=$_POST['pass'];
+
+	 $query = mysql_query("INSERT INTO signup_signin VALUES('$sr','$pic','$fn','$ln','$email','$pass','$gender','$cn','$add')")or die("" . mysql_error());
+		
+		if($query)
+		{
+			echo'<script type="text/javascript">alert("Successfully Signed Up")</script>';
+		}
+		else
+		{
+			echo 'Sign Up failed';
+		}
+
+ }
+ ?>
   </div>
 </div>
 
