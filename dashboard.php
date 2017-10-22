@@ -95,7 +95,7 @@ a:visited{
             
     	<div class="col-md-2 col-lg-2" style="margin-bottom:56px">
         <br>
-        	<img src="../images/logo.png" class="img-responsive" width="500" height="500"/>
+        	<img src="images/logo.png" class="img-responsive" width="500" height="500"/>
             
             <div class="nav">
             
@@ -140,7 +140,30 @@ a:visited{
                     <div class="col-md-12 col-lg-12">
                     
                         <div class="company">
-                            <a href="dashboard.php" class="comp"><h1><marquee>Welcome to 3S</marquee></h1></a>
+                            <a href="dashboard.php" class="comp"><h1><marquee><?php
+							include('database.php');
+							$email = $_SESSION['email'];
+		$rs= mysql_query("select * from signup_signin where email_id='$email'");
+	while ($row = mysql_fetch_array($rs)) {
+		
+	if(mysql_num_rows($rs)<1)
+	{
+		echo'<font color="#FF0000">No user logged in</font>';
+	}
+	else{
+		echo'Welcome to 3S. Thank you for registring with us ';
+		if($row['gender']='Male')
+		{
+			echo'Mr. ';
+		}
+		else
+		{
+			echo'Mrs. ';	
+		}
+		echo ucwords($row['first_name'].' '.$row['last_name']);
+	}
+	}
+        ?></marquee></h1></a>
                         
                         </div>
                      
