@@ -52,7 +52,13 @@ function loginvalidate(){
 }
 function signupvalidate(){
 	var email = document.getElementById("emailid").value;
-	var pass = document.getElementById("pswrd").value;
+	var pass = document.getElementById("pass").value;
+	var fn = document.getElementById("fn").value;
+	var ln = document.getElementById("ln").value;
+	var cn = document.getElementById("cn").value;
+	var add = document.getElementById("add").value;
+	var gender = document.getElementsByName("gender").value;
+	var photo = document.getElementById("pic").value;
 	
 	if(email == ''){
 		alert("You haven't entered your Email ID");
@@ -60,15 +66,33 @@ function signupvalidate(){
 	else if(pass == ''){
 		alert("You haven't entered your Password");
 	}
+	else if(fn == ''){
+		alert("You haven't entered your First Name");
+	}
+	else if(ln == ''){
+		alert("You haven't entered your Last Name");
+	}
+	else if(cn == ''){
+		alert("You haven't mentioned your Contact Number");
+	}
+	else if(add == ''){
+		alert("You haven't entered your Address");
+	}
+	else if(gender == ''){
+		alert("You haven't specify your Gender");
+	}
+	else if(photo == ''){
+		alert("You haven't uploaded your Photograph");
+	}
 	else{
-		var b = confirm("Are you sure you want to Login?");
+		var b = confirm("Are you sure you want to Sign Up?");
 		if(b==1)
 		{
-			alert("Successfully Logged in....");
+			alert("Successfully Signed up....");
 		}
 		else
 		{
-			alert("Login Failed!!!..");
+			alert("Sign Up Failed!!!..");
 		}	
 	}
 }
@@ -213,7 +237,35 @@ if(isset($_POST['submit']))
                         
 <div id="overlay" ondblclick="off()">
   <div id="overlaytext">
- 
+ <?php
+ if (isset($_POST['submit1']))
+ {
+	 $sr = '';
+	 $pic = $_FILES['pic']['name'];
+		$temp_image= $_FILES['pic']['tmp_name'];
+		move_uploaded_file($_FILES['pic']['tmp_name'],'uploads/users'.$_FILES['pic']['name']);
+		
+	 $fn= $_POST['fn'];
+	 $ln= $_POST['ln'];
+	 $gender= $_POST['gender'];
+	 $cn= $_POST['cn'];
+	 $add= $_POST['add'];
+	 $email=$_POST['emailid'];
+	 $pass=$_POST['pass'];
+
+	 $query = mysql_query("INSERT INTO sign_up/in VALUES('$sr','$pic','$fn','$ln','$email','$pass','$add','$gender','$cn')")or die("" . mysql_error());
+		
+		if($query)
+		{
+			echo'<script type="text/javascript">alert("Files Uploaded successfully")</script>';
+		}
+		else
+		{
+			echo 'Querry failed';
+		}
+
+ }
+ ?>
      <center> <img src="images/logo.png" class="img-responsive" width="138" height="138"/>
                
                	<h1><font face="Times New Roman, Times, serif">Sign Up</font></h1></center>
@@ -258,7 +310,7 @@ if(isset($_POST['submit']))
         </div>
       
       <div class="form-group">
-      <center><input type ="submit" name="submit" value="Sign Up" id="submit" class="button"></center>
+      <center><input type ="submit" name="submit1" value="Sign Up" id="submit1" class="button" onClick="signupvalidate()"></center>
       </div>  
   </form>
   
