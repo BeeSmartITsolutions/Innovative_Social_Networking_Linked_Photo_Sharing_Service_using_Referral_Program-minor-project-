@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,7 +28,29 @@
 <!-- js files Start -->
 
 <script>
-function validate(){
+function loginvalidate(){
+	var email = document.getElementById("emailid").value;
+	var pass = document.getElementById("pswrd").value;
+	
+	if(email == ''){
+		alert("You haven't entered your Email ID");
+	}
+	else if(pass == ''){
+		alert("You haven't entered your Password");
+	}
+	else{
+		var b = confirm("Are you sure you want to Login?");
+		if(b==1)
+		{
+			alert("Successfully Logged in....");
+		}
+		else
+		{
+			alert("Login Failed!!!..");
+		}	
+	}
+}
+function signupvalidate(){
 	var email = document.getElementById("emailid").value;
 	var pass = document.getElementById("pswrd").value;
 	
@@ -65,7 +90,6 @@ function validate(){
 
 <body style="background:url(images/back2.jpg) no-repeat fixed; background-size:cover" >
 <?php 
-session_start();
 
 include ("database.php");
 
@@ -93,7 +117,7 @@ if(isset($_POST['submit']))
 	
 	if(isset($_SESSION['email'])&&isset($_SESSION['name']))
 	{
-		header("location:welcome.php");
+		header("location:dashboard.php");
 	}
 	else
 	{	
@@ -125,10 +149,10 @@ if(isset($_POST['submit']))
                     <a href="index.php" style="text-decoration:none; color:#fff;"><font size="+2">3<b class="color">S</b></font></a>
            		 	</div> 
         
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     </div> 
                 
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">                    
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">                    
                     
                     <ul class="nav nav-pills">
                     
@@ -136,7 +160,6 @@ if(isset($_POST['submit']))
                     <li><a href="#about_section" style="color:#FFF;">About</a></li>
                     <li><a href="#team_section" style="color:#FFF;">Team</a></li>
                     <li><a href="#feature_section" style="color:#FFF;">Features</a></li>
-                    <li><a href="#contact_section" style="color:#FFF;">Contact</a></li>
                     <li><a href="#" id="modal" style="text-decoration:none; color:#FFF;">Login</a></li>
                     
                     
@@ -169,7 +192,7 @@ if(isset($_POST['submit']))
             </div>
             
         <div class="form-group">
-             <center><button type="submit" name="submit" id="sub" class="button btn" onClick="validate()"><span class="glyphicon glyphicon-log-in">&nbsp;Login</span></button>
+             <center><button type="submit" name="submit" id="sub" class="button btn" onClick="loginvalidate()"><span class="glyphicon glyphicon-log-in">&nbsp;Login</span></button>
              &nbsp;&nbsp;&nbsp;<button type="reset" name="reset" id="res" class="button btn" ><span class="glyphicon glyphicon-remove-sign">&nbsp;Reset</span></button>
              </center>
              </div>
@@ -178,7 +201,7 @@ if(isset($_POST['submit']))
                            
                            <!-- Footer start -->
                             <div class="modal-footer">
-                              <center><h6>Not an existing user? <a href="">Sign Up</a> here</h6></center>
+                              <center><h6>Not an existing user? <a href="#" onclick="on()">Sign Up</a> here</h6></center>
                             </div>
                            <!-- Footer Ends --> 
                             
@@ -188,6 +211,70 @@ if(isset($_POST['submit']))
                         </div>
                         <!-- Modal Content ends -->
                         
+<div id="overlay" ondblclick="off()">
+  <div id="overlaytext">
+ 
+      <br>
+     <center> <img src="images/logo.png" class="img-responsive" width="138" height="138"/></center>
+     <br>
+     
+	  <form name="signup" method="post" action="" enctype="multipart/form-data">
+  	  
+        <div class="form-group">
+        <label class="label">First Name:</label>
+        <input type ="text" class="form-control" placeholder="First Name" name="fn" id="fn" />      
+        </div>
+        
+        <div class="form-group">
+        <label class="label">Last Name:</label>
+        <input type ="text" class="form-control" placeholder="Last name" name="ln" id="ln" />      
+        </div>
+        
+        <div class="form-group">
+        <label class="label">Photo:</label>
+        <input type ="file" class="form-control" placeholder="Browse" name="pic" id="pic" />      
+        </div>
+        
+        <div class="form-group">
+        <label class="label">Email ID:</label>
+        <input type="email" class="form-control" placeholder="abc@xyz.com" name="emailid" id="emailid">
+        </div>
+        
+        <div class="form-group">
+        <label class="label">Password:</label>
+        <input type="password" class="form-control" placeholder="First Name" name="pass" id="pass" />      
+        </div>
+        
+        <div class="form-group">
+        <label class="label">Contact Number:</label>
+        <input type ="text" class="form-control" placeholder="Last name" name="cn" id="cn"/>      
+        </div>
+        
+        <div class="form-group">
+        <label class="label">Address:</label>
+        <input type="text" class="form-control" placeholder="Browse" name="add" id="add"/>      
+        </div>
+  		
+     
+      
+      <div class="form-group">
+      <input type ="submit">
+      </div>  
+  </form>
+  
+  </div>
+</div>
+
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+
 				        <script>
 						<!-- Modal Start -->
 
@@ -350,9 +437,22 @@ if(isset($_POST['submit']))
         			<br>
                         <div class="row" style="padding:0px 0px 10px 0px;">
         				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <p>We all are familiar with the Social Networking Sites (SNSs) and everyone is accessing one or another type of SNSs or may be all of these SNSs.  Due to the advancement in the field of technology, these social networking sites has become an important part of our lives and everyone has become so addictive to all these SNS’s that whenever we get our leisure time we start surfing these SNS’s. <br><br>
-But due to our busy schedule, it has become so challenging to surf all the SNSs and upload your post onto them one by one. So to overcome this issue, <i>"We have developing a common platform where a user can share same information / post on all these SNS’s at the same time using social API’s".</i> If someone has to share similar information/post to every SNS’s they have to login on our web based application for each service they use. <br><br>
-We named it as <b>3S</b> which indicates <b>SNS Sharing Service</b>.</p>
+                        <?php
+						
+						 $rs=mysql_query("select * from about");
+						if(mysql_num_rows($rs)<1)
+						{
+							echo'<p class="danger">No rows are present</p>';
+						}
+						else
+						{
+							
+							while ($row = mysql_fetch_array($rs)) 
+							{						
+								echo '<p align="justify">'.$row['desc'].'</p>';
+							}
+						}
+						?>
 
                         </div>           
                     </div>
