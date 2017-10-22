@@ -214,51 +214,51 @@ if(isset($_POST['submit']))
 <div id="overlay" ondblclick="off()">
   <div id="overlaytext">
  
-      <br>
-     <center> <img src="images/logo.png" class="img-responsive" width="138" height="138"/></center>
-     <br>
-     
+     <center> <img src="images/logo.png" class="img-responsive" width="138" height="138"/>
+               
+               	<h1><font face="Times New Roman, Times, serif">Sign Up</font></h1></center>
 	  <form name="signup" method="post" action="" enctype="multipart/form-data">
   	  
-        <div class="form-group">
-        <label class="label">First Name:</label>
-        <input type ="text" class="form-control" placeholder="First Name" name="fn" id="fn" />      
-        </div>
-        
-        <div class="form-group">
-        <label class="label">Last Name:</label>
-        <input type ="text" class="form-control" placeholder="Last name" name="ln" id="ln" />      
+      	<label class="label">Name:</label>
+        <div class="form-inline">
+        <input type ="text" class="form-control" placeholder="example: Stephen" name="fn" id="fn" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type ="text" class="form-control" placeholder="example: Hawking" name="ln" id="ln" />
         </div>
         
         <div class="form-group">
         <label class="label">Photo:</label>
-        <input type ="file" class="form-control" placeholder="Browse" name="pic" id="pic" />      
+        <input type ="file" placeholder="Browse" class="form-control-file" name="pic" id="pic" />      
         </div>
         
         <div class="form-group">
         <label class="label">Email ID:</label>
         <input type="email" class="form-control" placeholder="abc@xyz.com" name="emailid" id="emailid">
+        <small id="emailHelp" class="form-text text-muted">example: john123@gmail.com</small>
         </div>
         
         <div class="form-group">
         <label class="label">Password:</label>
-        <input type="password" class="form-control" placeholder="First Name" name="pass" id="pass" />      
+        <input type="password" class="form-control" placeholder="*******" name="pass" id="pass" />      
         </div>
         
-        <div class="form-group">
-        <label class="label">Contact Number:</label>
-        <input type ="text" class="form-control" placeholder="Last name" name="cn" id="cn"/>      
+        <label class="label">Gender:</label>
+        
+       <label class="label" style="margin-left:150px">Contact Number:</label>
+        <div class="form-inline">
+        <input type="radio" name="gender" value="Male">&nbsp;Male
+		<input type="radio" name="gender" value="Female" style="margin-left:16px">&nbsp;Female
+		
+        <input type ="text" class="form-control" placeholder="+91-0000000000" name="cn" id="cn" style="margin-left:100px"/>      
         </div>
         
         <div class="form-group">
         <label class="label">Address:</label>
-        <input type="text" class="form-control" placeholder="Browse" name="add" id="add"/>      
+        <input type="text" class="form-control" placeholder="Address" name="add" id="add"/>      
         </div>
-  		
-     
       
       <div class="form-group">
-      <input type ="submit">
+      <center><input type ="submit" name="submit" value="Sign Up" id="submit" class="button"></center>
       </div>  
   </form>
   

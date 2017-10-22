@@ -31,7 +31,7 @@
 
 #overlaytext{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     color: white;
     transform: translate(-50%,-50%);
@@ -185,8 +185,7 @@ input[type=text]:hover{
     padding: 14px 20px;
 	background:inherit;
     margin: 8px 0;
-	width:100%;
-    display: inline-block;
+	display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
