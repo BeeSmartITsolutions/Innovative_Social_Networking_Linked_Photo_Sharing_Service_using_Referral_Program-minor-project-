@@ -43,7 +43,8 @@ header("location:index.php");
 </head>
 <style>
 body{
-	background:url(images/back1.jpg);
+	background:url(images/back1.jpg) no-repeat;
+	background-size:cover;
 }
 .head{
 	text-align:right;
@@ -82,6 +83,7 @@ a:visited{
 		cursor:pointer;
 }
 </style>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59eca4223791466c"></script> 
 <body>
 <div class="container-fluid" style="background:rgba(0,0,0,0.4);">
 
@@ -103,8 +105,7 @@ a:visited{
                 
                	<li class="active"><a href="welcome.php">DashBoard</a></li>
                 
-                <li><a href="../index.php" target="_blank">Visit to Website</a></li>
-                <li><a href="files.php">Upload your files</a></li>
+                <li><a href="share.php">Share your Post</a></li>
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Qualification</a>
                 
                 
@@ -115,7 +116,7 @@ a:visited{
                 
                 </li>
                 
-                <li><a href="visit.php">Industrial Visits</a></li>
+                <li><a href="refer.php">Refer to a Friend</a></li>
                 <li><a href="training.php">Industrial Trainings</a></li>
                 <li><a href="achievement.php">Achievements</a></li>
                 
@@ -164,6 +165,14 @@ a:visited{
 	}
 	}
         ?></marquee></h1></a>
+        
+        <center><h5><?php
+		
+		date_default_timezone_set("Asia/Calcutta");
+		echo "Today is " . date("Y-m-d");
+		echo "&nbsp;&nbsp;&nbsp;&nbsp;The time is " . date("h:i:s A");
+        
+		?></h5></center>
                         
                         </div>
                      
@@ -199,6 +208,14 @@ a:visited{
                <script type="text/javascript" src="http://100widgets.com/js_data.php?id=168"></script>
                
                 </div>
+                
+               <form> 
+               <div class="addthis_inline_share_toolbox"><input type="text" />
+                </div>
+                </form>
+                
+                <form>
+                
                 
               </div>
         	
