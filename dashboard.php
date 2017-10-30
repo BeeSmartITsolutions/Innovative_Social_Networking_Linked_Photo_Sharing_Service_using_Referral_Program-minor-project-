@@ -43,8 +43,7 @@ header("location:index.php");
 </head>
 <style>
 body{
-	background:url(images/back1.jpg) no-repeat;
-	background-size:cover;
+	background:url(images/back1.jpg);
 }
 .head{
 	text-align:right;
@@ -63,7 +62,6 @@ li a:hover{
 	text-decoration:underline !important;
 	border-style:outset !important;
 }
-
 a:link{
 	text-decoration:none;
 	color:#FFFFFF;
@@ -83,7 +81,6 @@ a:visited{
 		cursor:pointer;
 }
 </style>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59eca4223791466c"></script> 
 <body>
 <div class="container-fluid" style="background:rgba(0,0,0,0.4);">
 
@@ -97,7 +94,7 @@ a:visited{
             
     	<div class="col-md-2 col-lg-2" style="margin-bottom:56px">
         <br>
-        	<img src="images/logo.png" class="img-responsive" width="500" height="500"/>
+        	<img src="../images/logo.png" class="img-responsive" width="500" height="500"/>
             
             <div class="nav">
             
@@ -105,7 +102,8 @@ a:visited{
                 
                	<li class="active"><a href="welcome.php">DashBoard</a></li>
                 
-                <li><a href="share.php">Share your Post</a></li>
+                <li><a href="../index.php" target="_blank">Visit to Website</a></li>
+                <li><a href="files.php">Upload your files</a></li>
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Qualification</a>
                 
                 
@@ -116,7 +114,7 @@ a:visited{
                 
                 </li>
                 
-                <li><a href="refer.php">Refer to a Friend</a></li>
+                <li><a href="visit.php">Industrial Visits</a></li>
                 <li><a href="training.php">Industrial Trainings</a></li>
                 <li><a href="achievement.php">Achievements</a></li>
                 
@@ -141,38 +139,7 @@ a:visited{
                     <div class="col-md-12 col-lg-12">
                     
                         <div class="company">
-                            <a href="dashboard.php" class="comp"><h1><marquee><?php
-							include('database.php');
-							$email = $_SESSION['email'];
-		$rs= mysql_query("select * from signup_signin where email_id='$email'");
-	while ($row = mysql_fetch_array($rs)) {
-		
-	if(mysql_num_rows($rs)<1)
-	{
-		echo'<font color="#FF0000">No user logged in</font>';
-	}
-	else{
-		echo'Welcome to 3S. Thank you for registring with us ';
-		if($row['gender']='Male')
-		{
-			echo'Mr. ';
-		}
-		else
-		{
-			echo'Mrs. ';	
-		}
-		echo ucwords($row['first_name'].' '.$row['last_name']);
-	}
-	}
-        ?></marquee></h1></a>
-        
-        <center><h5><?php
-		
-		date_default_timezone_set("Asia/Calcutta");
-		echo "Today is " . date("Y-m-d");
-		echo "&nbsp;&nbsp;&nbsp;&nbsp;The time is " . date("h:i:s A");
-        
-		?></h5></center>
+                            <a href="dashboard.php" class="comp"><h1><marquee>Welcome to 3S</marquee></h1></a>
                         
                         </div>
                      
@@ -208,14 +175,6 @@ a:visited{
                <script type="text/javascript" src="http://100widgets.com/js_data.php?id=168"></script>
                
                 </div>
-                
-               <form> 
-               <div class="addthis_inline_share_toolbox"><input type="text" />
-                </div>
-                </form>
-                
-                <form>
-                
                 
               </div>
         	
