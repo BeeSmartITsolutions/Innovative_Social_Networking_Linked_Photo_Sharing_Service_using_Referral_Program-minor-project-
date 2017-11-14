@@ -43,7 +43,7 @@ header("location:index.php");
 </head>
 <style>
 body{
-	background:url(images/back1.jpg);
+	background:url(images/bck1.jpg);
 }
 .head{
 	text-align:right;
@@ -92,37 +92,24 @@ a:visited{
     
     	<!-- side naviagtion start -->
             
-    	<div class="col-md-2 col-lg-2" style="margin-bottom:56px">
+    	<div class="col-md-2 col-lg-2" style="margin-bottom:162px">
         <br>
-        	<img src="../images/logo.png" class="img-responsive" width="500" height="500"/>
+        	<img src="images/logo.png" class="img-responsive" width="500" height="500"/>
             
             <div class="nav">
             
             <ul class="nav nav-pills">
+                <br><br>
+               	<li class="active"><a href="dashboard.php">DashBoard</a></li>
                 
-               	<li class="active"><a href="welcome.php">DashBoard</a></li>
+                <li><a href="">Upload Your post</a></li>
+                <li><a href="">Like the post</a></li>
+                <li><a href="">Commment on post</a></li>
                 
-                <li><a href="../index.php" target="_blank">Visit to Website</a></li>
-                <li><a href="files.php">Upload your files</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Qualification</a>
-                
-                
-                <ul class="dropdown-menu" style="background:rgba(0,0,0,0.95);">      
-               <li><a href="edu.php" style="color:#fff;">Education Qualification</a></li><br>
-               <li><a href="pro.php" style="color:#fff;">Professional Qualification</a></li>
-     			</ul>         
-                
-                </li>
-                
-                <li><a href="visit.php">Industrial Visits</a></li>
-                <li><a href="training.php">Industrial Trainings</a></li>
-                <li><a href="achievement.php">Achievements</a></li>
-                
-                <li><a href="eca.php">Curricular Activities</a></li>
-                <li><a href="certi.php">Certifications</a></li>
+                <li><a href="">Personal Information</a></li>
                 
                 <li><a href="logout.php">Logout</a></li>
-                 <br><br>
+                 
             </ul>
           
             </div>
@@ -154,25 +141,23 @@ a:visited{
               <div class="row">
                 
                 <div class="col-md-4 col-lg-4">
-                  <!-- calander and date widget -->
-                    
-                     <iframe src=http://widgetscode.com/wc/nature/all?skin=blk1 style='width:320px;height:420px;margin:0;'frameborder=0></iframe>
+                  <!-- holidays widget -->
+                    <script type="text/javascript" src="http://100widgets.com/js_data.php?id=249"></script>
                      
-                     
-                  <!-- calander and date widget -->
+                  <!-- holidays widget -->
                      
                 </div>
                 
                             
                  <div class="col-md-4 col-lg-4">
                
-               <script type="text/javascript" src="http://100widgets.com/js_data.php?id=249"></script>
-            
+               
+            <script type="text/javascript" src="http://100widgets.com/js_data.php?id=168"></script>
                           
                </div>
                
                 <div class="col-md-4 col-lg-4">
-               <script type="text/javascript" src="http://100widgets.com/js_data.php?id=168"></script>
+               
                
                 </div>
                 
