@@ -12,7 +12,7 @@ header("location:index.php");
 <title>Social Networking Photo Sharing Service | Dashboard</title>
 
 <link rel="icon" href="images/logo.png" type="image/x-icon">
-
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- Bootstrap Files Start -->
 
 	<!-- Offline Files -->
@@ -40,6 +40,9 @@ header("location:index.php");
     <!-- Offline Files -->
     
 <!-- Bootstrap Files End -->
+<script src="JQuery/jquery.min.js"></script>
+<script src="JQuery/jquery.transit.min.js"></script>
+
 </head>
 <style>
 body{
@@ -80,6 +83,101 @@ a:visited{
 		color: #26aa56;
 		cursor:pointer;
 }
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+	  transform: translateY(-400px);
+  }
+  100% {
+	  transform: translateY(-2px);
+  }
+}
+@keyframes jump1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+	  transform: translateY(-350px);
+  }
+  100% {
+	  transform: translateY(-2px);
+  }
+}
+@keyframes jump2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+	  transform: translateY(-300px);
+  }
+  100% {
+	  transform: translateY(-2px);
+  }
+}
+@keyframes jump3 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+	  transform: translateY(-250px);
+  }
+  100% {
+	  transform: translateY(-2px);
+  }
+}
+@keyframes jump4 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+	  transform: translateY(-200px);
+  }
+  100% {
+	  transform: translateY(-2px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  15%{
+	  transform: translateX(90px) translateY(-100px);
+  }
+  30% {
+	  transform: translateX(180px) translateY(-2px);
+  }
+  45% {
+	  transform: translateX(270px) translateY(-100px);
+  }
+  60% {
+	  transform: translateX(360px) translateY(-2px);
+  }
+  100%{
+	  transform: translateX(0px) translateY(-2px);
+  }
+  }
+@keyframes bounce1 {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  15%{
+	  transform: translateX(-90px) translateY(-100px);
+  }
+  30% {
+	  transform: translateX(-180px) translateY(-2px);
+  }
+  45% {
+	  transform: translateX(-270px) translateY(-100px);
+  }
+  60% {
+	  transform: translateX(-360px) translateY(-2px);
+  }
+  100%{
+	  transform: translateX(0px) translateY(-2px);
+  }
+  }
 </style>
 <body>
 <div class="container-fluid" style="background:rgba(0,0,0,0.4);">
@@ -140,27 +238,63 @@ a:visited{
               
               <div class="row">
                 
-                <div class="col-md-4 col-lg-4">
-                  <!-- holidays widget -->
-                    <script type="text/javascript" src="http://100widgets.com/js_data.php?id=249"></script>
-                     
-                  <!-- holidays widget -->
+                <div class="col-md-3 col-lg-3">
+                  
                      
                 </div>
                 
                             
-                 <div class="col-md-4 col-lg-4">
                
+                <div class="col-md-4 col-lg-4" style="margin-top:300px">
                
-            <script type="text/javascript" src="http://100widgets.com/js_data.php?id=168"></script>
+               <div class="row">
+
+			  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div style="background-color:#0FF; width:20px; height:20px; margin-top:auto; border-radius:10px;transform:translateX(0px) translateY(0px); animation:bounce1 3s infinite  ease-in-out;">
+              </div>
+              
+              </div>
+                
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              
+                <div style="background-color:blue; width:20px; height:20px; margin-top:auto; border-radius:10px;transform:translateY(-200px); animation:jump4 1s infinite  ease-in-out;">
+              </div>
+              
+              </div>
+           <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+             
+            <div style="background-color:pink; width:20px; height:20px; margin-top:auto; border-radius:10px;transform:translateY(-250px); animation:jump3 2s infinite  ease-in-out;">
+              </div>
+              
+              
+              </div>
+             <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div style="background-color:green; width:20px; height:20px; margin-top:auto; border-radius:10px;transform:translateY(-300px); animation:jump2 3s infinite  ease-in-out;">
+              </div>
+              
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              
+              <div style="background-color:yellow; width:20px; height:20px; margin-top:auto; border-radius:10px; transform:translateY(-350px); animation:jump1 2s infinite  ease-in-out;">
+              </div>
+              
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              
+              <div style="background-color:red; width:20px; height:20px; margin-top:auto; border-radius:10px; transform:translateY(-400px); animation:jump 1s infinite  ease-in-out;">
+              </div>
+              
+              </div>
+          </div>
+          
+            
+               
+                </div>
+                <div class="col-md-5 col-lg-5">
+               
                           
                </div>
                
-                <div class="col-md-4 col-lg-4">
-               
-               
-                </div>
-                
               </div>
         	
             
